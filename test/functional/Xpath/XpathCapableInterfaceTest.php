@@ -1,11 +1,11 @@
 <?php
 
-namespace Dhii\Data\Tree\FuncTest;
+namespace Dhii\Data\Tree\FuncTest\Xpath;
 
 use Xpmock\TestCase;
 
 /**
- * Tests {@see \Dhii\Data\Tree\XpathCapableInterface}.
+ * Tests {@see \Dhii\Data\Tree\Xpath\XpathCapableInterface}.
  *
  * @since [*next-version*]
  */
@@ -16,7 +16,7 @@ class XpathCapableInterfaceTest extends TestCase
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Data\\Tree\\XpathCapableInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Data\\Tree\\Xpath\\XpathCapableInterface';
 
     /**
      * Creates a new instance of the test subject.

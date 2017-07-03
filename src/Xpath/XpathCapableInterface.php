@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhii\Data\Tree;
+namespace Dhii\Data\Tree\Xpath;
 
 use Traversable;
 use Dhii\Data\Tree\NodeInterface;
@@ -14,8 +14,8 @@ interface XpathCapableInterface
      *
      * @since [*next-version*]
      *
-     * @param NodeInterface $node The node, on which to run the xPath query.
-     * @param string $query The query to run on the node.
+     * @param NodeInterface $node  The node, on which to run the xPath query.
+     * @param string        $query The query to run on the node.
      *
      * @return Traversable The matching nodes..
      */
