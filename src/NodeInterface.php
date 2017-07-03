@@ -18,4 +18,12 @@ interface NodeInterface extends
         KeyAwareInterface,
         ValueAwareInterface
 {
+    /**
+     * {@inheritdoc}
+     *
+     * @since [*next-version*]
+     *
+     * @return NodeInterface|null The node's parent, if any.
+     */
+    public function getParent();
 }
