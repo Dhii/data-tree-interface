@@ -11,7 +11,9 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": "^5.3.9 | ^7.0"
+        "php": "^5.3.9 | ^7.0",
+        "dhii/data-hierarchy-aware-interface": "dev-master",
+        "dhii/data-key-value-aware-interface": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "^4.8",
@@ -27,5 +29,11 @@
     "scripts": {
         "test": "phpunit",
         "csfix": "php-cs-fixer fix -vvv"
-    }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/Dhii/data-hierarchy-aware-interface.git"
+        }
+    ]
 }
