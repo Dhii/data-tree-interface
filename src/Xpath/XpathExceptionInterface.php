@@ -7,14 +7,6 @@ namespace Dhii\Data\Tree\Xpath;
  *
  * @since [*next-version*]
  */
-interface XpathExceptionInterface
+interface XpathExceptionInterface extends XpathAwareInterface
 {
-    /**
-     * Retrieves the xPath.
-     *
-     * @since [*next-version*]
-     *
-     * @return string|null The problematic xPath, if any.
-     */
-    public function getXpath();
 }
