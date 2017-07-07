@@ -2,28 +2,15 @@
 
 namespace Dhii\Data\Tree;
 
-use Dhii\Data\ParentAwareInterface;
-use Dhii\Data\ChildrenAwareInterface;
 use Dhii\Data\ValueAwareInterface;
-use Dhii\Data\KeyAwareInterface;
 
 /**
  * Something that can be a tree node.
  *
+ * This is an abstract interface, in that it must never be implemented directly.
+ *
  * @since [*next-version*]
  */
-interface NodeInterface extends
-        ParentAwareInterface,
-        ChildrenAwareInterface,
-        KeyAwareInterface,
-        ValueAwareInterface
+interface NodeInterface extends ValueAwareInterface
 {
-    /**
-     * {@inheritdoc}
-     *
-     * @since [*next-version*]
-     *
-     * @return NodeInterface|null The node's parent, if any.
-     */
-    public function getParent();
 }

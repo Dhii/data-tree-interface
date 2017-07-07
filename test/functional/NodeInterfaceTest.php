@@ -28,9 +28,6 @@ class NodeInterfaceTest extends TestCase
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-            ->getParent()
-            ->getChildren()
-            ->getKey()
             ->getValue()
             ->new();
 
@@ -47,7 +44,10 @@ class NodeInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(
-            static::TEST_SUBJECT_CLASSNAME, $subject, 'Subject is not a valid instance.'
+            static::TEST_SUBJECT_CLASSNAME, $subject, 'A valid instance of the subject could not be created'
+        );
+        $this->assertInstanceOf(
+            'Dhii\\Data\\ValueAwareInterface', $subject, 'Subject does not extend required interface'
         );
     }
 }
