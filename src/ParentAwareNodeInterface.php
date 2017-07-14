@@ -2,7 +2,7 @@
 
 namespace Dhii\Data\Tree;
 
-use Dhii\Data\ParentAwareInterface;
+use Dhii\Data\Hierarchy\ParentAwareInterface;
 
 /**
  * A node that can have its parent retrieved.

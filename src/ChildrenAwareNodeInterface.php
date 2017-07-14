@@ -2,7 +2,7 @@
 
 namespace Dhii\Data\Tree;
 
-use Dhii\Data\ChildrenAwareInterface;
+use Dhii\Data\Hierarchy\ChildrenAwareInterface;
 use Traversable;
 
 /**

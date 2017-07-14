@@ -30,6 +30,7 @@ class ChildrenAwareNodeInterfaceTest extends TestCase
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->getValue()
             ->getChildren()
+            ->hasChildren()
             ->new();
 
         return $mock;

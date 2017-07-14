@@ -4,28 +4,38 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "370b072fc72446a4ffe3b2e9d4b43be6",
+    "content-hash": "0e14370c1cdce0aff041786d554553f1",
     "packages": [
         {
-            "name": "dhii/data-hierarchy-aware-interface",
-            "version": "dev-master",
+            "name": "dhii/data-hierarchy-interface",
+            "version": "dev-task/initial-interfaces",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Dhii/data-hierarchy-aware-interface.git",
-                "reference": "984c7ca4da6aef9ead643a78b454ccd1e27bc9b3"
+                "url": "https://github.com/Dhii/hierarchy-interface.git",
+                "reference": "a5921984d4929f39b286b02ed2411cb5abf2b184"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dhii/hierarchy-interface/zipball/a5921984d4929f39b286b02ed2411cb5abf2b184",
+                "reference": "a5921984d4929f39b286b02ed2411cb5abf2b184",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3 | ^7.0"
             },
             "require-dev": {
-                "codeclimate/php-test-reporter": "dev-master",
+                "codeclimate/php-test-reporter": "<=0.3.2",
                 "dhii/php-cs-fixer-config": "dev-php-5.3",
-                "phpunit/phpunit": "4.*",
+                "phpunit/phpunit": "^4.8",
                 "ptrofimov/xpmock": "^1.1"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Dhii\\Data\\": "src/"
+                    "Dhii\\Data\\Hierarchy\\": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -35,8 +45,8 @@
                     "email": "development@dhii.co"
                 }
             ],
-            "description": "Interfaces for objects that are aware of a hierarchy, which they are a part of.",
-            "time": "2016-11-27 15:40:20"
+            "description": "Interfaces for working with hierarchies",
+            "time": "2017-07-14 18:52:08"
         },
         {
             "name": "dhii/data-key-value-aware-interface",
@@ -2136,7 +2146,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "dhii/data-hierarchy-aware-interface": 20,
+        "dhii/data-hierarchy-interface": 20,
         "dhii/data-key-value-aware-interface": 20,
         "dhii/php-cs-fixer-config": 20
     },
