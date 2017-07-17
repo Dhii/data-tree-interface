@@ -19,7 +19,7 @@ interface ChildrenAwareNodeInterface extends
      *
      * @since [*next-version*]
      *
-     * @return BasicNodeInterface[]|Traversable A list of child nodes.
+     * @return NodeInterface[]|Traversable A list of child nodes.
      */
     public function getChildren();
 }

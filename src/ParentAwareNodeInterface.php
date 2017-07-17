@@ -18,7 +18,7 @@ interface ParentAwareNodeInterface extends
      *
      * @since [*next-version*]
      *
-     * @return BasicNodeInterface|null The node's parent, if any.
+     * @return NodeInterface|null The node's parent, if any.
      */
     public function getParent();
 }
