@@ -31,11 +31,5 @@
     "scripts": {
         "test": "phpunit",
         "csfix": "php-cs-fixer fix -vvv"
-    },
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/Dhii/data-hierarchy-aware-interface.git"
-        }
-    ]
+    }
 }
