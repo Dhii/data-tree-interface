@@ -14,7 +14,7 @@
     "require": {
         "php": "^5.3.9 | ^7.0",
         "dhii/data-hierarchy-interface": "^0.1",
-        "dhii/data-key-value-aware-interface": "dev-master",
+        "dhii/data-key-value-aware-interface": "^0.1",
         "dhii/stringable-interface": "^0.1"
     },
     "require-dev": {
