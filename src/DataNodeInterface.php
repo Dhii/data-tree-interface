@@ -9,7 +9,7 @@ use Dhii\Data\Container\ContainerInterface;
  * 
  * Although the node's value and key SHOULD now be retrievable via the generic
  * `get()`, the `getKey()` and `getValue()` still MUST return corresponding
- * values, the node's unique key, and the actual value that the node represents,
+ * values, the node's key, and the actual value that the node represents,
  * respectively.
  *
  * @since [*next-version*]
