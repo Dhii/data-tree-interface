@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhii\Data\Tree\FuncTest;
+namespace Dhii\Data\Tree\UnitTest;
 
 use Xpmock\TestCase;
 
@@ -16,7 +16,7 @@ class ParentAwareNodeInterfaceTest extends TestCase
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Data\\Tree\\ParentAwareNodeInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Data\Tree\ParentAwareNodeInterface';
 
     /**
      * Creates a new instance of the test subject.
@@ -45,11 +45,7 @@ class ParentAwareNodeInterfaceTest extends TestCase
     {
         $subject = $this->createInstance();
 
-        $this->assertInstanceOf(
-            static::TEST_SUBJECT_CLASSNAME, $subject, 'A valid instance of the subject could not be created'
-        );
-        $this->assertInstanceOf(
-            'Dhii\\Data\\Tree\\NodeInterface', $subject, 'Subject does not extend required interface'
-        );
+        $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'A valid instance of the subject could not be created');
+        $this->assertInstanceOf('Dhii\\Data\\Tree\\NodeInterface', $subject, 'Subject does not extend required interface');
     }
 }
