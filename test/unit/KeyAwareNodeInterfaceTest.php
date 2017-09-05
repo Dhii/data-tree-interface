@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhii\Data\Tree\FuncTest;
+namespace Dhii\Data\Tree\UnitTest;
 
 use Xpmock\TestCase;
 
@@ -16,7 +16,7 @@ class KeyAwareNodeInterfaceTest extends TestCase
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Data\\Tree\\KeyAwareNodeInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Data\Tree\KeyAwareNodeInterface';
 
     /**
      * Creates a new instance of the test subject.
@@ -28,9 +28,9 @@ class KeyAwareNodeInterfaceTest extends TestCase
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-            ->getValue()
-            ->getKey()
-            ->new();
+                ->getValue()
+                ->getKey()
+                ->new();
 
         return $mock;
     }
@@ -44,11 +44,7 @@ class KeyAwareNodeInterfaceTest extends TestCase
     {
         $subject = $this->createInstance();
 
-        $this->assertInstanceOf(
-            static::TEST_SUBJECT_CLASSNAME, $subject, 'A valid instance of the subject could not be created'
-        );
-        $this->assertInstanceOf(
-            'Dhii\\Data\\Tree\\NodeInterface', $subject, 'Subject does not extend required interface'
-        );
+        $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'A valid instance of the subject could not be created');
+        $this->assertInstanceOf('Dhii\Data\Tree\NodeInterface', $subject, 'Subject does not extend required interface');
     }
 }
