@@ -29,6 +29,12 @@
             "Dhii\\Data\\Tree\\": "src"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Dhii\\Data\\Tree\\UnitTest\\": "test/unit",
+            "Dhii\\Data\\Tree\\FuncTest\\": "test/unit"
+        }
+    },
     "scripts": {
         "test": "phpunit",
         "csfix": "php-cs-fixer fix -vvv"
